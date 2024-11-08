@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const todoRoutes = require('./routes/todo.js');
-const port = 3000;
+const todoRoutes = require('./routes/tododb.js');
+const port = process.env.PORT;
 
 app.use(express.json());
 app.use('/todos', todoRoutes);
@@ -9,11 +9,11 @@ app.use('/todos', todoRoutes);
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.render('index'); // Pastikan ada file index.ejs di dalam folder views
+    res.render('index'); 
 });
 
 app.get('/contact', (req, res) => {
-    res.render('contact'); // Pastikan ada file contact.ejs di dalam folder views
+    res.render('contact'); 
 });
 
 app.listen(port, () => {
