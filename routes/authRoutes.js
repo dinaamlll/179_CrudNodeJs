@@ -3,6 +3,8 @@ const bcrypt = require('bcryptjs');
 const db = require('../database/db');
 const router = express.Router();
 
+
+
 // Route Signup
 router.post('/signup', (req, res) => {
     const { username, password } = req.body;
@@ -20,7 +22,8 @@ router.post('/signup', (req, res) => {
 // Route untuk menampilkan form signup
 router.get('/signup', (req, res) => {
     res.render('signup', {
-        layout: 'layouts/main-layout'
+        layout: 'layouts/main-layouts',
+        noNavbar: true 
     });
 });
 
@@ -46,7 +49,8 @@ router.post('/login', (req, res) => {
 // Route untuk menampilkan form login
 router.get('/login', (req, res) => {
     res.render('login', {
-        layout: 'layouts/main-layout'
+        layout: 'layouts/main-layouts',
+        noNavbar: true 
     });
 });
 
@@ -55,6 +59,13 @@ router.post('/logout', (req, res) => {
     req.session.destroy((err) => {
         if (err) return res.status(500).send('Error logging out');
         res.redirect('/login'); // Arahkan ke halaman login setelah logout
+    });
+});
+// Route untuk halaman utama
+router.get('/', (req, res) => {
+    res.render('index', {
+        layout: 'layouts/main-layouts',
+        noNavbar: true // Menghilangkan navbar di halaman utama
     });
 });
 

@@ -1,0 +1,124 @@
+body {
+    background-color: #f8e6f9; /* Warna latar belakang pink lembut */
+    background-image: url('https://st2.depositphotos.com/46466810/44535/i/450/depositphotos_445353128-stock-photo-beautiful-flowers-color-decoration-pink.jpg'); /* Gambar latar belakang */
+    background-size: cover; /* Membuat gambar menutupi seluruh background */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    height: 100vh; /* Membuat halaman memenuhi tinggi viewport */
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ff66b2; /* Warna navbar pink cerah */
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    width: 50px; /* Menyesuaikan ukuran logo */
+    height: auto; /* Menjaga rasio gambar */
+    object-fit: cover;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem; /* Ukuran teks navbar */
+    font-weight: 600; /* Tebal untuk teks navbar */
+    color: black;
+    transition: color 0.3s ease; /* Transisi perubahan warna */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffb3d9; /* Warna pink muda saat hover */
+}
+
+/* Menggunakan justify-content-center agar navbar menu terpusat */
+.navbar-nav {
+    justify-content: center;
+}
+
+.navbar-nav .nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Main Container */
+.main-container {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih transparan */
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 10vh;
+}
+
+/* Heading */
+h1, .lead {
+    color: #ff66b2; /* Warna teks judul dan paragraf */
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.lead {
+    font-size: 1.3rem;
+}
+
+/* Feature Card */
+.feature-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Efek hover pada card */
+}
+
+.feature-card h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #ff66b2; /* Warna pink untuk heading */
+}
+
+/* Custom Button */
+.btn-custom {
+    background-color: #ff66b2; /* Tombol dengan warna pink cerah */
+    color: white;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #ff3385; /* Warna pink lebih gelap saat hover */
+}
+
+/* Tombol besar */
+.btn-lg {
+    font-size: 1.25rem;
+    padding: 15px 30px;
+}
+/* Navbar dengan latar belakang pink muda */
+.navbar {
+    background-color: #FFB6C1; /* Pink muda */
+}
+
+/* Tombol Submit dengan warna pink */
+.btn-pink {
+    background-color: #FFB6C1; /* Pink muda */
+    border-color: #FFB6C1;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-pink:hover {
+    background-color: #FF69B4; /* Pink lebih gelap saat hover */
+    border-color: #FF69B4;
+}

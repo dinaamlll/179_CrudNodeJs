@@ -1,12 +1,16 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Logo menggunakan gambar -->
+        <a class="navbar-brand" href="#">
+            <img src="/images/logohome.png" alt="Logo" width="150">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <!-- Navbar items yang ditempatkan di tengah -->
+            <ul class="navbar-nav mx-auto"> <!-- mx-auto untuk menempatkan navbar di tengah -->
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
@@ -14,10 +18,13 @@
                     <a class="nav-link" href="/contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/todo-view">Todos</a>
+                    <a class="nav-link" href="/todo-view">Todo</a>
                 </li>
+            </ul>
+            <!-- Sign Out Button, ditempatkan dengan ms-auto -->
+            
                 <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="/login">Sign Out</a>
                 </li>
             </ul>
         </div>

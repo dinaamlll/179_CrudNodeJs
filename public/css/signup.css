@@ -1,0 +1,39 @@
+body {
+    background-color: #f9f9f9;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+.logo {
+    text-align: center; /* Center the content inside the logo div */
+}
+
+.logo img {
+    width: 150px; 
+    height: auto; 
+    display: block; 
+    border-radius: 50%;
+    margin: 0 auto; 
+}
+
+/* Set background image and style */
+body {
+    background-image: url('https://png.pngtree.com/background/20210711/original/pngtree-hand-painted-pink-flowers-background-material-picture-image_1145236.jpg'); 
+    background-size: cover; /* Make the image cover the whole background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Make sure the body takes full viewport height */
+    margin: 0;
+}
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+.btn-primary {
+    background-color: palevioletred;
+    border-color: palevioletred;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: palevioletred;
+}

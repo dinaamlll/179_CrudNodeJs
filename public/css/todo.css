@@ -1,0 +1,61 @@
+body {
+    background-image: url('https://st2.depositphotos.com/46466810/44535/i/450/depositphotos_445353128-stock-photo-beautiful-flowers-color-decoration-pink.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.btn-pink {
+    background-color: #FF69B4; /* Warna Pink */
+    border-color: #FF69B4;
+}
+
+.btn-pink:hover {
+    background-color: #FF1493; /* Warna pink yang lebih gelap ketika hover */
+    border-color: #FF1493;
+}
+
+/* Card Styles */
+.card {
+    background-color: rgba(255, 255, 255, 0.7); /* Latar belakang card transparan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi untuk efek transformasi dan bayangan */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Mengangkat card sedikit ke atas saat hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan di sekitar card saat hover */
+}
+
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ff66b2; /* Warna navbar pink cerah */
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    width: 50px; /* Menyesuaikan ukuran logo */
+    height: auto; /* Menjaga rasio gambar */
+    object-fit: cover;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem; /* Ukuran teks navbar */
+    font-weight: 600; /* Tebal untuk teks navbar */
+    color: black;
+    transition: color 0.3s ease; /* Transisi perubahan warna */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffb3d9; /* Warna pink muda saat hover */
+}
+
+/* Menggunakan justify-content-center agar navbar menu terpusat */
+.navbar-nav {
+    justify-content: center;
+}
+
+.navbar-nav .nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}

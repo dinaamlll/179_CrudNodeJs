@@ -1,5 +1,73 @@
-<div class="container">
-    <h1>Welcome to the Home Page!</h1>
-    <p>This is the home page of our application.</p>
-    <a href="/contact" class="btn btn-primary">Go to Contact Page</a>
-</div>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="/css/index.css">
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Logo menggunakan gambar -->
+            <a class="navbar-brand" href="#">
+                <img src="/images/logohome.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto"> <!-- mx-auto untuk menempatkan navbar di tengah -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/todo-view">Todo</a>
+                    </li>
+                </ul>
+                <!-- Sign Out Button, ditempatkan dengan ms-auto -->
+                <ul class="navbar-nav ms-3"> <!-- ms-3 memberikan sedikit margin kiri -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Kontainer Utama -->
+    <div class="container main-container">
+        <h1 class="display-3">Selamat Datang di Website Kami!</h1>
+        <p class="lead">Website ini dirancang untuk membantu Anda mengelola tugas dengan lebih mudah dan efektif.</p>
+
+        <!-- Bagian Fitur -->
+        <div class="row justify-content-center"> <!-- Menggunakan justify-content-center untuk menempatkan elemen di tengah -->
+            <!-- Tombol Menuju Contact -->
+            <div class="col-md-4 d-flex justify-content-center mb-3">
+                <div class="feature-card">
+                    <h4>Hubungi Kami</h4>
+                    <p>Jika Anda membutuhkan bantuan atau informasi lebih lanjut, kunjungi halaman kontak kami. Kami siap membantu Anda dengan pertanyaan Anda.</p>
+                    <a href="/contact" class="btn btn-custom btn-lg">Hubungi Kami</a>
+                </div>
+            </div>
+            <!-- Tombol Menuju Todo -->
+            <div class="col-md-4 d-flex justify-content-center mb-3">
+                <div class="feature-card">
+                    <h4>Daftar Tugas</h4>
+                    <p>Kelola tugas Anda dengan lebih efisien melalui halaman Todo.
+                    Anda dapat menambah, mengedit, dan menghapus tugas dengan mudah di sini.</p>
+                    <a href="/todo-view" class="btn btn-custom btn-lg">Lihat Tugas</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
